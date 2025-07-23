@@ -17,7 +17,13 @@ interface YamlData {
 
 export async function loadCalendarData(yamlUrl: string): Promise<CalendarMonth> {
   try {
-    const response = await fetch(yamlUrl);
+    const response = await fetch(yamlUrl, {
+      cache: 'no-cache',
+      headers: {
+        'Cache-Control': 'no-cache',
+        'Pragma': 'no-cache'
+      }
+    });
     const yamlText = await response.text();
     
     // Simple YAML parser for our specific format

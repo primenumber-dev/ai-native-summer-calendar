@@ -9,8 +9,9 @@ function App() {
   const [calendarData, setCalendarData] = useState<CalendarMonth>(august2025Static);
 
   useEffect(() => {
-    // Load data from YAML
-    loadCalendarData('/ai-native-summer-calendar/data/august2025.yaml')
+    // Load data from YAML with cache busting
+    const timestamp = new Date().getTime();
+    loadCalendarData(`/ai-native-summer-calendar/data/august2025.yaml?t=${timestamp}`)
       .then(data => {
         setCalendarData(data);
       })
