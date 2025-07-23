@@ -1,13 +1,31 @@
+import { useEffect, useState } from 'react'
 import './App.css'
 import Calendar from './components/Calendar'
-import { august2025 } from './data/august2025'
+import { august2025Static } from './data/august2025Static'
+import { loadCalendarData } from './utils/calendarDataLoader'
+import type { CalendarMonth } from './types/calendar'
 
 function App() {
+  const [calendarData, setCalendarData] = useState<CalendarMonth>(august2025Static);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Load data from YAML
+    loadCalendarData('/ai-native-summer-calendar/data/august2025.yaml')
+      .then(data => {
+        setCalendarData(data);
+        setIsLoading(false);
+      })
+      .catch(error => {
+        console.error('Failed to load YAML data, using static data:', error);
+        setIsLoading(false);
+      });
+  }, []);
+
   return (
     <>
       <div className="summer-gradient"></div>
-      <div className="sun"></div>
-      <Calendar data={august2025} />
+      <Calendar data={calendarData} />
     </>
   )
 }

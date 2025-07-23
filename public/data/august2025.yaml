@@ -1,0 +1,64 @@
+year: 2025
+month: 8
+monthName: August
+
+articles:
+  - date: 1
+    title: "告知記事出すよ"
+    author: "yamakan"
+    link: ""
+
+  - date: 4
+    title: "プロダクト開発の AI Native 推進のこれまで（仮）"
+    author: "kekekenta"
+    link: ""
+
+  - date: 5
+    title: "改めてマネジメントとしてのブレスト活用(?)"
+    author: "yamakan"
+    link: ""
+
+  - date: 7
+    title: "ヘルプドキュメント周りの何か"
+    author: "akamine"
+    link: ""
+
+  - date: 14
+    title: "情シスのAI Nativeの取り組みを書く予定"
+    author: "kekekenta"
+    link: ""
+
+  - date: 18
+    title: "BDD + RGBC with Claude Codeで開発のススメ"
+    author: "kkatamot"
+    link: ""
+
+  - date: 19
+    title: "何か"
+    author: "yatsu"
+    link: ""
+
+  - date: 20
+    title: "メモリファイル拡充で過去のインシデントをレビューで指摘できるようにした話"
+    author: "kekekenta"
+    link: ""
+
+  - date: 21
+    title: "マルチエージェントの何か"
+    author: "akamine"
+    link: ""
+
+  - date: 22
+    title: "Claude Code Action の権限周りの話"
+    author: "otsuki"
+    link: ""
+
+  - date: 27
+    title: "marpの話（他に書く人いたら譲ります）"
+    author: "kekekenta"
+    link: ""
+
+  - date: 31
+    title: "空いたところにCloud Sec JPで話したLiteLLMの話を書きます (書けます)"
+    author: "tktk"
+    link: ""

@@ -1,7 +1,7 @@
-// Calendar data for August 2025
+// Static fallback data for August 2025
 import type { CalendarMonth } from '../types/calendar';
 
-export const august2025: CalendarMonth = {
+export const august2025Static: CalendarMonth = {
   year: 2025,
   month: 8,
   monthName: 'August',

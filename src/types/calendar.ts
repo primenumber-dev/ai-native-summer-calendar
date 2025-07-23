@@ -2,6 +2,7 @@
 export interface Article {
   title: string;
   author: string;
+  link?: string;
 }
 
 export interface CalendarDay {
