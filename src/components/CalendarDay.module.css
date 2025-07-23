@@ -1,10 +1,12 @@
 /* Calendar day cell styles */
 .calendarDay {
   background: #fff;
-  min-height: 120px;
+  min-height: 160px;
+  height: 100%;
   padding: 15px;
   position: relative;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
 }
 
 .calendarDay:hover {
@@ -44,15 +46,14 @@
   background: rgba(10, 116, 99, 0.08);
   border-left: 2px solid #0a7463;
   cursor: pointer;
-  transition: all 0.2s ease;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  transition: background 0.2s ease;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .articleItem:hover {
   background: rgba(10, 116, 99, 0.15);
-  padding-left: 12px;
 }
 
 .articleAuthor {

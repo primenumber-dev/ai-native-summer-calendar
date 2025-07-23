@@ -6,9 +6,9 @@ export const august2025: CalendarMonth = {
   month: 8,
   monthName: 'August',
   stats: {
-    totalArticles: 24,
-    totalAuthors: 18,
-    emptyDays: 7
+    totalArticles: 12,
+    totalAuthors: 7,
+    emptyDays: 19
   },
   days: [
     // Previous month days (July)
@@ -22,15 +22,12 @@ export const august2025: CalendarMonth = {
     {
       date: 1, month: 8, year: 2025, isCurrentMonth: true,
       articles: [
-        { title: 'AIアルゴリズムで解く夏の最適化', author: '山田 花子' },
-        { title: '機械学習の冷却システム', author: '田中 太郎' }
+        { title: '告知記事出すよ', author: 'yamakan' }
       ]
     },
     {
       date: 2, month: 8, year: 2025, isCurrentMonth: true, isSaturday: true,
-      articles: [
-        { title: '深層学習モデルの軽量化テクニック', author: '佐藤 次郎' }
-      ]
+      articles: []
     },
     {
       date: 3, month: 8, year: 2025, isCurrentMonth: true, isSunday: true,
@@ -39,14 +36,13 @@ export const august2025: CalendarMonth = {
     {
       date: 4, month: 8, year: 2025, isCurrentMonth: true,
       articles: [
-        { title: '自然言語処理の最新トレンド', author: '伊藤 美咲' }
+        { title: 'プロダクト開発の AI Native 推進のこれまで（仮）', author: 'kekekenta' }
       ]
     },
     {
       date: 5, month: 8, year: 2025, isCurrentMonth: true,
       articles: [
-        { title: 'AIエージェントのマルチモーダル', author: '鈴木 一郎' },
-        { title: '強化学習の実践ガイド', author: '高橋 花子' }
+        { title: '改めてマネジメントとしてのブレスト活用(?)', author: 'yamakan' }
       ]
     },
     {
@@ -56,7 +52,7 @@ export const august2025: CalendarMonth = {
     {
       date: 7, month: 8, year: 2025, isCurrentMonth: true,
       articles: [
-        { title: 'エッジAIの省電力設計', author: '木村 健' }
+        { title: 'ヘルプドキュメント周りの何か', author: 'akamine' }
       ]
     },
     {
@@ -65,9 +61,7 @@ export const august2025: CalendarMonth = {
     },
     {
       date: 9, month: 8, year: 2025, isCurrentMonth: true, isSaturday: true,
-      articles: [
-        { title: '生成AIのプロンプトエンジニアリング', author: '渡辺 太一' }
-      ]
+      articles: []
     },
     {
       date: 10, month: 8, year: 2025, isCurrentMonth: true, isSunday: true,
@@ -75,16 +69,11 @@ export const august2025: CalendarMonth = {
     },
     {
       date: 11, month: 8, year: 2025, isCurrentMonth: true,
-      articles: [
-        { title: 'AIセキュリティの最前線', author: '中村 美穂' }
-      ]
+      articles: []
     },
     {
       date: 12, month: 8, year: 2025, isCurrentMonth: true,
-      articles: [
-        { title: '機械学習パイプラインの自動化', author: '小林 翔' },
-        { title: 'AIモデルの解釈可能性', author: '山本 花子' }
-      ]
+      articles: []
     },
     {
       date: 13, month: 8, year: 2025, isCurrentMonth: true,
@@ -93,14 +82,12 @@ export const august2025: CalendarMonth = {
     {
       date: 14, month: 8, year: 2025, isCurrentMonth: true,
       articles: [
-        { title: '量子機械学習の基礎', author: '斎藤 健一' }
+        { title: '情シスのAI Nativeの取り組みを書く予定', author: 'kekekenta' }
       ]
     },
     {
       date: 15, month: 8, year: 2025, isCurrentMonth: true,
-      articles: [
-        { title: 'AIによる異常検知システム', author: '加藤 美咲' }
-      ]
+      articles: []
     },
     {
       date: 16, month: 8, year: 2025, isCurrentMonth: true, isSaturday: true,
@@ -108,44 +95,41 @@ export const august2025: CalendarMonth = {
     },
     {
       date: 17, month: 8, year: 2025, isCurrentMonth: true, isSunday: true,
-      articles: [
-        { title: '週末に学ぶAI開発環境構築', author: '松田 太郎' }
-      ]
+      articles: []
     },
     {
       date: 18, month: 8, year: 2025, isCurrentMonth: true,
       articles: [
-        { title: 'コンピュータビジョンの応用', author: '石井 花子' }
+        { title: 'BDD + RGBC with Claude Codeで開発のススメ', author: 'kkatamot' }
       ]
     },
     {
       date: 19, month: 8, year: 2025, isCurrentMonth: true,
-      articles: []
+      articles: [
+        { title: '何か', author: 'yatsu' }
+      ]
     },
     {
       date: 20, month: 8, year: 2025, isCurrentMonth: true,
       articles: [
-        { title: 'AIチップの最新動向', author: '橋本 健' },
-        { title: '分散学習フレームワーク', author: '森 美穂' }
+        { title: 'メモリファイル拡充で過去のインシデントをレビューで指摘できるようにした話', author: 'kekekenta' }
       ]
     },
     {
       date: 21, month: 8, year: 2025, isCurrentMonth: true,
       articles: [
-        { title: 'AIエシックスと夏の開発', author: '清水 一郎' }
+        { title: 'マルチエージェントの何か', author: 'akamine' }
       ]
     },
     {
       date: 22, month: 8, year: 2025, isCurrentMonth: true,
       articles: [
-        { title: '時系列予測モデルの実装', author: '福田 花子' }
+        { title: 'Claude Code Action の権限周りの話', author: 'otsuki' }
       ]
     },
     {
       date: 23, month: 8, year: 2025, isCurrentMonth: true, isSaturday: true,
-      articles: [
-        { title: '休日に読むAI論文まとめ', author: '吉田 太郎' }
-      ]
+      articles: []
     },
     {
       date: 24, month: 8, year: 2025, isCurrentMonth: true, isSunday: true,
@@ -153,9 +137,7 @@ export const august2025: CalendarMonth = {
     },
     {
       date: 25, month: 8, year: 2025, isCurrentMonth: true,
-      articles: [
-        { title: 'AIプロダクト開発の実践', author: '岡田 美咲' }
-      ]
+      articles: []
     },
     {
       date: 26, month: 8, year: 2025, isCurrentMonth: true,
@@ -164,7 +146,7 @@ export const august2025: CalendarMonth = {
     {
       date: 27, month: 8, year: 2025, isCurrentMonth: true,
       articles: [
-        { title: '機械学習のデバッグ手法', author: '藤井 健一' }
+        { title: 'marpの話（他に書く人いたら譲ります）', author: 'kekekenta' }
       ]
     },
     {
@@ -173,21 +155,16 @@ export const august2025: CalendarMonth = {
     },
     {
       date: 29, month: 8, year: 2025, isCurrentMonth: true,
-      articles: [
-        { title: 'AIシステムのスケーリング', author: '西村 花子' }
-      ]
+      articles: []
     },
     {
       date: 30, month: 8, year: 2025, isCurrentMonth: true, isSaturday: true,
-      articles: [
-        { title: '夏のAIハッカソン振り返り', author: '川口 太郎' }
-      ]
+      articles: []
     },
     {
       date: 31, month: 8, year: 2025, isCurrentMonth: true, isSunday: true,
       articles: [
-        { title: '8月のAI技術総まとめ', author: '村田 美穂' },
-        { title: '次世代AIへの展望', author: '安藤 健' }
+        { title: '空いたところにCloud Sec JPで話したLiteLLMの話を書きます (書けます)', author: 'tktk' }
       ]
     }
   ]
