@@ -21,8 +21,8 @@ const CalendarList: React.FC<CalendarListProps> = ({ data }) => {
     return '';
   };
 
-  // Filter only current month days with articles
-  const currentMonthDays = data.days.filter(day => day.isCurrentMonth && day.articles.length > 0);
+  // Filter only current month days
+  const currentMonthDays = data.days.filter(day => day.isCurrentMonth);
 
   return (
     <div className={styles.listContainer}>
@@ -33,11 +33,12 @@ const CalendarList: React.FC<CalendarListProps> = ({ data }) => {
         
         {currentMonthDays.map((day) => {
           const weekdayClass = getWeekdayClass(day.date, day.month, day.year);
+          const isEmpty = day.articles.length === 0;
           
           return (
             <div 
               key={`${day.month}-${day.date}`} 
-              className={styles.dayItem}
+              className={`${styles.dayItem} ${isEmpty ? styles.emptyDay : ''}`}
             >
               <div className={styles.dayHeader}>
                 <div className={`${styles.dateInfo} ${weekdayClass}`}>
@@ -47,18 +48,20 @@ const CalendarList: React.FC<CalendarListProps> = ({ data }) => {
                   </span>
                 </div>
                 <span className={styles.articleCount}>
-                  {day.articles.length}件
+                  {day.articles.length > 0 ? `${day.articles.length}件` : '空き'}
                 </span>
               </div>
               
-              <div className={styles.articlesList}>
-                {day.articles.map((article, index) => (
-                  <div key={index} className={styles.articleItem}>
-                    <div className={styles.articleTitle}>{article.title}</div>
-                    <div className={styles.articleAuthor}>{article.author}</div>
-                  </div>
-                ))}
-              </div>
+              {day.articles.length > 0 && (
+                <div className={styles.articlesList}>
+                  {day.articles.map((article, index) => (
+                    <div key={index} className={styles.articleItem}>
+                      <div className={styles.articleTitle}>{article.title}</div>
+                      <div className={styles.articleAuthor}>{article.author}</div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           );
         })}
