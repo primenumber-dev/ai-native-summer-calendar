@@ -18,7 +18,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({ day }) => {
     <div className={dayClasses}>
       <div className={styles.dayNumber}>{day.date}</div>
       
-      {day.articles.length > 0 ? (
+      {day.articles.length > 0 && (
         <div className={styles.articleList}>
           {day.articles.map((article, index) => (
             <div key={index} className={styles.articleItem}>
@@ -27,8 +27,6 @@ const CalendarDay: React.FC<CalendarDayProps> = ({ day }) => {
             </div>
           ))}
         </div>
-      ) : (
-        day.isCurrentMonth && <div className={styles.emptyIndicator}></div>
       )}
     </div>
   );

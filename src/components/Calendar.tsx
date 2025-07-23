@@ -49,10 +49,6 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
             <span className={styles.statValue}>{data.stats.totalAuthors}</span>
             <span>投稿者</span>
           </div>
-          <div className={styles.statItem}>
-            <span className={styles.statValue}>{data.stats.emptyDays}</span>
-            <span>空き日</span>
-          </div>
         </div>
       </div>
 

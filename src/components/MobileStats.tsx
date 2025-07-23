@@ -7,7 +7,7 @@ interface MobileStatsProps {
   emptyDays: number;
 }
 
-const MobileStats: React.FC<MobileStatsProps> = ({ totalArticles, totalAuthors, emptyDays }) => {
+const MobileStats: React.FC<MobileStatsProps> = ({ totalArticles, totalAuthors }) => {
   return (
     <div className={styles.statsContainer}>
       <div className={styles.statCard}>
@@ -17,10 +17,6 @@ const MobileStats: React.FC<MobileStatsProps> = ({ totalArticles, totalAuthors, 
       <div className={styles.statCard}>
         <span className={styles.statValue}>{totalAuthors}</span>
         <span className={styles.statLabel}>投稿者</span>
-      </div>
-      <div className={styles.statCard}>
-        <span className={styles.statValue}>{emptyDays}</span>
-        <span className={styles.statLabel}>空き日</span>
       </div>
     </div>
   );
