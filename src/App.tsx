@@ -7,18 +7,15 @@ import type { CalendarMonth } from './types/calendar'
 
 function App() {
   const [calendarData, setCalendarData] = useState<CalendarMonth>(august2025Static);
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // Load data from YAML
     loadCalendarData('/ai-native-summer-calendar/data/august2025.yaml')
       .then(data => {
         setCalendarData(data);
-        setIsLoading(false);
       })
       .catch(error => {
         console.error('Failed to load YAML data, using static data:', error);
-        setIsLoading(false);
       });
   }, []);
 

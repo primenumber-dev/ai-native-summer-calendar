@@ -124,15 +124,15 @@ function generateCalendarMonth(data: YamlData): CalendarMonth {
   // Add current month days
   const daysInMonth = new Date(year, month, 0).getDate();
   for (let date = 1; date <= daysInMonth; date++) {
-    const dayOfWeek = days.length % 7;
+    const currentDayOfWeek: number = days.length % 7;
     days.push({
       date,
       month,
       year,
       articles: articlesByDate.get(date) || [],
       isCurrentMonth: true,
-      isSunday: dayOfWeek === 0,
-      isSaturday: dayOfWeek === 6
+      isSunday: currentDayOfWeek === 0,
+      isSaturday: currentDayOfWeek === 6
     });
   }
   
