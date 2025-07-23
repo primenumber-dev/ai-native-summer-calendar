@@ -1,0 +1,12 @@
+# This file defines code owners for automatic review requests
+# When someone opens a pull request that modifies matching files,
+# the code owners will be automatically requested for review.
+
+# Default owner for everything in the repo
+* @gtnao
+
+# You can also specify owners for specific directories or files
+# Examples:
+# /public/data/ @gtnao
+# /docs/ @gtnao @another-user
+# *.yaml @gtnao
