@@ -1,0 +1,140 @@
+/* Mobile list view styles */
+.listContainer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .listContainer {
+    display: block;
+  }
+}
+
+.monthSection {
+  margin-bottom: 40px;
+}
+
+.monthHeader {
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.monthName {
+  color: #0a7463;
+  font-weight: 600;
+}
+
+.dayItem {
+  background: #fff;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.dayItem:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.dayHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dateInfo {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.dayNumber {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #333;
+}
+
+.dayOfWeek {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.sunday .dayNumber,
+.sunday .dayOfWeek {
+  color: #ef4444;
+}
+
+.saturday .dayNumber,
+.saturday .dayOfWeek {
+  color: #3b82f6;
+}
+
+.articleCount {
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  background: rgba(10, 116, 99, 0.1);
+  color: #0a7463;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.emptyDay {
+  opacity: 0.5;
+}
+
+.emptyDay .articleCount {
+  background: #f0f0f0;
+  color: #999;
+}
+
+.articlesList {
+  padding: 16px;
+}
+
+.articleItem {
+  margin-bottom: 12px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.articleItem:last-child {
+  margin-bottom: 0;
+}
+
+.articleItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  background: #0a7463;
+  border-radius: 50%;
+}
+
+.articleTitle {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.articleAuthor {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.emptyMessage {
+  color: #999;
+  font-style: italic;
+  font-size: 0.9rem;
+}

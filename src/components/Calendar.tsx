@@ -2,6 +2,8 @@
 import type { CalendarMonth } from "../types/calendar";
 import styles from "./Calendar.module.css";
 import CalendarDay from "./CalendarDay";
+import CalendarList from "./CalendarList";
+import MobileStats from "./MobileStats";
 
 interface CalendarProps {
   data: CalendarMonth;
@@ -26,6 +28,13 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
           {data.year}
         </h1>
       </div>
+
+      {/* Mobile stats */}
+      <MobileStats 
+        totalArticles={data.stats.totalArticles}
+        totalAuthors={data.stats.totalAuthors}
+        emptyDays={data.stats.emptyDays}
+      />
 
       <div className={styles.calendarHeader}>
         <h2 className={styles.monthYear}>
@@ -65,6 +74,9 @@ const Calendar: React.FC<CalendarProps> = ({ data }) => {
           <CalendarDay key={`${day.month}-${day.date}`} day={day} />
         ))}
       </div>
+      
+      {/* Mobile list view */}
+      <CalendarList data={data} />
     </div>
   );
 };

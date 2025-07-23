@@ -104,3 +104,32 @@
 .weekdayHeader.saturday {
   color: #3b82f6;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 40px 16px;
+  }
+
+  .titleSection {
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    max-width: 120px;
+  }
+
+  .mainTitle {
+    font-size: 2.5rem;
+  }
+
+  .calendarHeader,
+  .calendarGrid {
+    display: none;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
