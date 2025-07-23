@@ -1,0 +1,79 @@
+/* Calendar day cell styles */
+.calendarDay {
+  background: #fff;
+  min-height: 120px;
+  padding: 15px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.calendarDay:hover {
+  background: #f9f9f9;
+  z-index: 1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.dayNumber {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.otherMonth .dayNumber {
+  color: #ccc;
+}
+
+.sunday .dayNumber {
+  color: #ef4444;
+}
+
+.saturday .dayNumber {
+  color: #3b82f6;
+}
+
+.articleList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.articleItem {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  background: rgba(10, 116, 99, 0.08);
+  border-left: 2px solid #0a7463;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.articleItem:hover {
+  background: rgba(10, 116, 99, 0.15);
+  padding-left: 12px;
+}
+
+.articleAuthor {
+  color: #666;
+  font-size: 0.7rem;
+}
+
+.moreArticles {
+  font-size: 0.7rem;
+  color: #0a7463;
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.emptyIndicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border: 2px dashed #e0e0e0;
+  border-radius: 50%;
+}

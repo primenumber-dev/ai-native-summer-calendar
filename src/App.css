@@ -1,0 +1,52 @@
+/* Summer gradient background */
+.summer-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 116, 99, 0.05),
+    transparent
+  );
+  z-index: 0;
+}
+
+/* Sun animation */
+.sun {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(
+    circle,
+    #ffd93d 40%,
+    #ffa500 70%,
+    transparent 71%
+  );
+  border-radius: 50%;
+  z-index: 0;
+  animation: sunPulse 4s ease-in-out infinite;
+}
+
+@keyframes sunPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sun {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+    right: 30px;
+  }
+}

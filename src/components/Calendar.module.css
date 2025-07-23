@@ -1,0 +1,104 @@
+/* Calendar component styles */
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.titleSection {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+  display: block;
+}
+
+.mainTitle {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 100;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.accent {
+  color: #0a7463;
+  font-weight: 700;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.monthYear {
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+}
+
+.month {
+  color: #0a7463;
+  font-weight: 600;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.statValue {
+  font-weight: 600;
+  color: #0a7463;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 80px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgb(243, 248, 247),
+    rgb(243, 248, 247) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+.weekdayHeader {
+  background: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #666;
+}
+
+.weekdayHeader.sunday {
+  color: #ef4444;
+}
+
+.weekdayHeader.saturday {
+  color: #3b82f6;
+}
