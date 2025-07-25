@@ -4,9 +4,9 @@ monthName: August
 
 articles:
   - date: 1
-    title: "告知記事出すよ"
+    title: "primeNumber Summer Calendar 2025"
     author: "yamakan"
-    link: ""
+    link: "https://note.com/yamakan_67/n/n7bad9800a47f"
 
   - date: 4
     title: "プロダクト開発の AI Native 推進のこれまで（仮）"
@@ -28,6 +28,11 @@ articles:
     author: "akamine"
     link: ""
 
+  - date: 8
+    title: "Terraform Provider for TROCCO のCHANGELOG更新をClaude Codeで自動化した話"
+    author: "u110"
+    link: ""
+
   - date: 12
     title: "グローバルエンジニアリングマネージャーの生の声"
     author: "saran"
@@ -36,6 +41,11 @@ articles:
   - date: 14
     title: "情シスのAI Nativeの取り組みを書く予定"
     author: "kekekenta"
+    link: ""
+
+  - date: 15
+    title: "調査、プロトタイピング、プロダクト分析等の何か"
+    author: ouchi
     link: ""
 
   - date: 18
@@ -63,12 +73,32 @@ articles:
     author: "otsuki"
     link: ""
 
+  - date: 24
+    title: "Claudeには英語で指示した方がいい説を検証する"
+    author: "namedpython"
+    link: ""
+
+  - date: 25
+    title: "にわか歴史学の知識を使って「エンジニアは生成AIに仕事を奪われるのか？」のポエムを書きたい"
+    author: "tktk"
+    link: ""
+
+  - date: 26
+    title: "PdMとしてのAI活用よもやま"
+    author: "nishiyama"
+    link: ""
+
   - date: 27
     title: "marpの話（他に書く人いたら譲ります）"
     author: "kekekenta"
     link: ""
 
-  - date: 31
-    title: "空いたところにCloud Sec JPで話したLiteLLMの話を書きます (書けます)"
-    author: "tktk"
+  - date: 28
+    title: "何か書く"
+    author: "D"
+    link: ""
+
+  - date: 29
+    title: "リポジトリをまたぐシステムでのClaude Code"
+    author: "namedpython"
     link: ""
